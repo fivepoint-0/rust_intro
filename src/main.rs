@@ -22,6 +22,4 @@ fn main() {
     mutable_vars::mutable_vars_example();
 
     split_section();
-
-    
 }
