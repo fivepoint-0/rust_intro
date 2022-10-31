@@ -4,6 +4,7 @@ mod mutable_vars;
 mod split_section;
 mod loops;
 mod tuples;
+mod function_references;
 
 // Import specific functoin from "mod split_section"
 use split_section::split_section;
@@ -46,6 +47,10 @@ fn main() {
     split_section();
 
     tuples::access_tuple_element_by_index_example();
+
+    split_section();
+
+    function_references::add_to_string_example();
 
     split_section();
 }
