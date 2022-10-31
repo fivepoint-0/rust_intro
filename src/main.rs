@@ -3,6 +3,7 @@ mod guessing_game;
 mod mutable_vars;
 mod split_section;
 mod loops;
+mod tuples;
 
 // Import specific functoin from "mod split_section"
 use split_section::split_section;
@@ -15,7 +16,7 @@ fn main() {
 
     // Guessing Game
     // module::public_function() is how you call an imported function without specific importing
-    guessing_game::guessing_game();
+    guessing_game::guessing_game_01();
 
     split_section();
 
@@ -24,21 +25,27 @@ fn main() {
 
     split_section();
 
-    loops::loops_example_1();
+    loops::named_loop_example();
 
     split_section();
 
-    loops::loops_example_2();
+    loops::while_loop_example();
 
     split_section();
 
-    loops::loops_example_3();
+    loops::access_array_in_loop_example();
 
     split_section();
 
-    loops::loops_example_4();
+    loops::foreach_loop_example();
 
     split_section();
 
-    
+    tuples::destructured_tuple_example();
+
+    split_section();
+
+    tuples::access_tuple_element_by_index_example();
+
+    split_section();
 }

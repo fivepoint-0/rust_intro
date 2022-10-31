@@ -1,6 +1,6 @@
 use std::io;
 
-pub fn guessing_game() {
+pub fn guessing_game_01() {
     println!("Guess the number!");
 
     println!("Please input your guess.");

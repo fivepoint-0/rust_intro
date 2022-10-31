@@ -1,7 +1,7 @@
 // This example is to illustrate infinite loops with labels 
 // so that you can break a particular loop inside of mutliple
 // loops
-pub fn loops_example_1() {
+pub fn named_loop_example() {
     let mut count = 0;
     'counting_up: loop {
         println!("count = {count}");
@@ -23,7 +23,7 @@ pub fn loops_example_1() {
     println!("End count = {count}");
 }
 
-pub fn loops_example_2() {
+pub fn while_loop_example() {
     let mut number = 3;
 
     while number != 0 {
@@ -35,7 +35,7 @@ pub fn loops_example_2() {
     println!("LIFTOFF!!!");
 }
 
-pub fn loops_example_3() {
+pub fn access_array_in_loop_example() {
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
 
@@ -46,7 +46,7 @@ pub fn loops_example_3() {
     }
 }
 
-pub fn loops_example_4() {
+pub fn foreach_loop_example() {
     let a = [10, 20, 30, 40, 50];
 
     for element in a {
