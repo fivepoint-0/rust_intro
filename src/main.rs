@@ -2,6 +2,7 @@
 mod guessing_game;
 mod mutable_vars;
 mod split_section;
+mod loops;
 
 // Import specific functoin from "mod split_section"
 use split_section::split_section;
@@ -22,4 +23,22 @@ fn main() {
     mutable_vars::mutable_vars_example();
 
     split_section();
+
+    loops::loops_example_1();
+
+    split_section();
+
+    loops::loops_example_2();
+
+    split_section();
+
+    loops::loops_example_3();
+
+    split_section();
+
+    loops::loops_example_4();
+
+    split_section();
+
+    
 }
