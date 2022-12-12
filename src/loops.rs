@@ -53,3 +53,20 @@ pub fn foreach_loop_example() {
         println!("the value is: {element}");
     }
 }
+
+pub fn fib(n: u128) -> u128 {
+    fn inner(n: u128, penultimate: u128, last: u128) -> u128 {
+        match n {
+            0 => penultimate,
+            1 => last,
+            _ => inner(n - 1, last, penultimate + last),
+        }
+    }
+    inner(n, 0, 1)
+}
+
+pub fn fib_example() {
+    for int in 0..100 {
+        println!("Fib({}) is {}", int, fib(int));
+    }
+}
