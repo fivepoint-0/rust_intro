@@ -1,5 +1,5 @@
 use std::io;
-
+#[warn(dead_code)]
 pub fn guessing_game_01() {
     println!("Guess the number!");
 
