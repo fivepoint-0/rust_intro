@@ -5,6 +5,7 @@ mod split_section;
 mod loops;
 mod tuples;
 mod function_references;
+mod slice;
 
 // Import specific functoin from "mod split_section"
 use split_section::split_section;
@@ -53,4 +54,11 @@ fn main() {
     function_references::add_to_string_example();
 
     split_section();
+
+    slice::first_word_example(&String::from("Hello world!"));
+
+    slice::second_word_example(&String::from("Hello world!"));
+
+    split_section();
+
 }
